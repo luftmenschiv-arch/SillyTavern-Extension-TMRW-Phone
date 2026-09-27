@@ -1,0 +1,80 @@
+@import url('./v3/ui/styles.css');
+
+/* Single user-facing TMRW Phone surface. The retained Preview37 runtime may remain installed only as internal presentation/migration authority. */
+#tmrw-phone-launcher {
+  display: none !important;
+}
+
+body:has(#tmrw-phone-launcher) #tmrw-phone-root {
+  display: none !important;
+}
+
+#tmrw-v3-phone-root,
+#tmrw-v3-phone-launcher {
+  box-sizing: border-box;
+}
+
+#tmrw-v3-phone-root {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100dvh;
+  z-index: 2147483647;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+#tmrw-v3-phone-root[hidden] {
+  display: none;
+}
+
+#tmrw-v3-phone-root:not([hidden]) ~ #tmrw-v3-phone-launcher {
+  display: none;
+}
+
+/* Extension settings control is outside the phone presentation authority. */
+#tmrw-v3-production-control {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+#tmrw-v3-production-control [hidden] {
+  display: none !important;
+}
+
+#tmrw-v3-production-control .tmrw-v3-production-control__diagnostic {
+  margin: 0.45rem 0 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  white-space: pre-line;
+  font-size: 0.9em;
+}
+
+#tmrw-v3-production-control .tmrw-v3-production-control__status-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+#tmrw-v3-production-control .tmrw-v3-production-control__label {
+  font-weight: 600;
+}
+
+#tmrw-v3-production-control .tmrw-v3-production-control__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+  min-width: 0;
+}
+
+#tmrw-v3-production-control .tmrw-v3-production-control__actions > button {
+  flex: 1 1 12rem;
+  min-width: 0;
+  min-height: 44px;
+  white-space: normal;
+}

@@ -1,0 +1,1570 @@
+{
+  "schema": "tmrw-public-beta-v1",
+  "version": "0.1.0-beta.2",
+  "channel": "beta",
+  "stable": false,
+  "repository": "https://github.com/luftmenschiv-arch/SillyTavern-Extension-TMRW-Phone",
+  "components": {
+    "extension": "0.1.0-beta.2",
+    "voiceManager": "1.0.0-alpha.1",
+    "presetCatalog": 1,
+    "presets": 24,
+    "previews": 48
+  },
+  "compatibility": {
+    "keyflow": "1.5.1",
+    "focusedTestsPassed": 51,
+    "liveProviderQualification": false
+  },
+  "pending": [
+    "fresh-device-termux-installer",
+    "complete-runtime-model-download",
+    "automatic-updates",
+    "live-mobile-qualification"
+  ],
+  "companion": {
+    "file": "tmrw-voice-companion-0.1.0-beta.2.tar.gz",
+    "bytes": 37432250,
+    "sha256": "0eef83745c55c9216f7f3f07772f958d56f9a07e459612b15ddf7564a17dbb45",
+    "completeRuntime": false
+  },
+  "candidateManifestSha256": "c24784ac9da3331f7cd57585efc57cda8835bc5b0319d59cad1cd6b4c61a9138",
+  "textNormalization": "LF",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 57,
+      "sha256": "c39f10800178931e4c781cf2240aa42a0d3a7c7c4ba168396f1866c0c4256756"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 97,
+      "sha256": "f958a3130585e974c996c95f5a2785598464785d1bb76f3e4d1503b2613fce3b"
+    },
+    {
+      "path": "QUALITY.md",
+      "bytes": 2003,
+      "sha256": "1afebce3fcf959a77d9c20b69760b2076dea84a7cacfad265ce3c61c9488c691"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7972,
+      "sha256": "4040999b0ba0d9fb38a8c53080a215c0a7c1c79f23e0ffcafec97f071a2d2e7a"
+    },
+    {
+      "path": "index.js",
+      "bytes": 43,
+      "sha256": "0e40211bbd27d7aa9d3c7fb592468ba9a2e66858638ee2822958200cc6b822e1"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 515,
+      "sha256": "16dfb0478376d8bb9b54596902d87c5d2fd00d2061f01fb34bb5c0a93be83b97"
+    },
+    {
+      "path": "package.json",
+      "bytes": 200,
+      "sha256": "484002ea2441ba4a22d4b150133bcf93abf6c09be859417605c7b7b1e3cd9d89"
+    },
+    {
+      "path": "scripts/verify-release.mjs",
+      "bytes": 4836,
+      "sha256": "74d41ed15de73df4b2e9bc19d9dc75c61442e2eb908a3cbd8d13837299d29dff"
+    },
+    {
+      "path": "style.css",
+      "bytes": 1708,
+      "sha256": "ee643f638c252188771e08e4e19ccd6bdcb4964e1a413eca97ed8b936b3bd91f"
+    },
+    {
+      "path": "v3/application/ai-jobs/ai-job-projector.mjs",
+      "bytes": 5339,
+      "sha256": "0f9ec18faab0cc85515ae903a4666b7ef6b748fd5f6c47a43d03ec433949ff61"
+    },
+    {
+      "path": "v3/application/ai-jobs/event-scoped-ai-job-service.mjs",
+      "bytes": 16558,
+      "sha256": "3c8dd62351634470394b4f1b4eeeeed7366a6a06ebf7cc651d10e10ff8692141"
+    },
+    {
+      "path": "v3/application/calendar-app-service.mjs",
+      "bytes": 10763,
+      "sha256": "8e22df8626ef5bd672cdd4aa10342f88117c2f6d394874eb4d4726b170c60daa"
+    },
+    {
+      "path": "v3/application/call-bot-reply-coordinator.mjs",
+      "bytes": 17085,
+      "sha256": "cad7bbb2e6218b3851bb2af1a44add471aade97ec2d3032ff7da7060e22d7bf7"
+    },
+    {
+      "path": "v3/application/call-coordinator.mjs",
+      "bytes": 14425,
+      "sha256": "24aad07b594299c9182c057de2a5173d73bc48cb482a885a3aee98abe2c52035"
+    },
+    {
+      "path": "v3/application/call-story-integration.mjs",
+      "bytes": 13506,
+      "sha256": "cd0c0ec6f8de53e51631fdcbd4d853b596262dc77d09d518aa23235cbde93008"
+    },
+    {
+      "path": "v3/application/call-timing-diagnostics.mjs",
+      "bytes": 4733,
+      "sha256": "2fd2b669ffbeb4217456f89dfa4e30c8c59854c4cac0c938bfae620c643e3dfc"
+    },
+    {
+      "path": "v3/application/call-voice-presenter.mjs",
+      "bytes": 19476,
+      "sha256": "4186ff276f404b8110a6078d67d2f1682d026e76ce03e82ab84d3ba79727b636"
+    },
+    {
+      "path": "v3/application/commerce-app-service.mjs",
+      "bytes": 5326,
+      "sha256": "885efd36a42dc8e58f38706486fbf1911dbf74703bb900a4721b80ffbb66479a"
+    },
+    {
+      "path": "v3/application/image-provider-service.mjs",
+      "bytes": 4653,
+      "sha256": "9d8038445bdfb2ec0b22b38ee044999e885a74faa2d575523a264030e4a24ec1"
+    },
+    {
+      "path": "v3/application/lifecycle-budget.mjs",
+      "bytes": 359,
+      "sha256": "bbecbd3e2850284e0d903acace2c38e15883b4be9e4a14a679501c38c5ebdb2a"
+    },
+    {
+      "path": "v3/application/phone-controller.mjs",
+      "bytes": 2085,
+      "sha256": "0caebe456c2d687f843cedcf12be95f0ed3b5a94df01edfd5c4723b345416c93"
+    },
+    {
+      "path": "v3/application/playable-bootstrap/adaptive-world-pulse.mjs",
+      "bytes": 58643,
+      "sha256": "0b6a1b7ebd0aea71987cca912a1f4783a22ec4c165e7d84cfeef829288777a8e"
+    },
+    {
+      "path": "v3/application/playable-bootstrap/cast-manifest.mjs",
+      "bytes": 13639,
+      "sha256": "57b107d16ec967bf79e8fa2b1820a60b82e08861509cabd468acecd79175f6cd"
+    },
+    {
+      "path": "v3/application/playable-bootstrap/history-reader.mjs",
+      "bytes": 2795,
+      "sha256": "5b7ee8931bb3cf81c32bb76a7d95a67b65fcca262fff219d8d5ce137929c474d"
+    },
+    {
+      "path": "v3/application/playable-bootstrap/initial-phone-seed.mjs",
+      "bytes": 7224,
+      "sha256": "78bed7c0d50d64a3cce26a5b221de0ca5a6f28d84e206bac2566d5fee05e06b1"
+    },
+    {
+      "path": "v3/application/playable-bootstrap/playable-bootstrap-service.mjs",
+      "bytes": 12292,
+      "sha256": "7ddb9ba2d0757c598948083b31008fa269e9d61d34a02dc6b7d9bd9ac2ee0d93"
+    },
+    {
+      "path": "v3/application/playable-bootstrap/wallet-rp-evidence.mjs",
+      "bytes": 5466,
+      "sha256": "90d02138967723148c68f8ae277dead36755d4a5822e5a68b1a5f0921603f561"
+    },
+    {
+      "path": "v3/application/post-visual-resolver.mjs",
+      "bytes": 1752,
+      "sha256": "211531ce9718302eae74136bb5b7575e2f87e0fef9d3f4ecaab4fb69d728bae5"
+    },
+    {
+      "path": "v3/application/smart-contact-discovery.mjs",
+      "bytes": 6572,
+      "sha256": "0b09eebfc855bb7fa9230896e1665bc33d6a83a39da06d5e960cd62b4ee6402c"
+    },
+    {
+      "path": "v3/application/voice-audio-history-service.mjs",
+      "bytes": 7260,
+      "sha256": "9adfa59183cf252196b60073e79478b9bad5fae79cd4a90ac2684745957f9ec8"
+    },
+    {
+      "path": "v3/application/voice-profile-service.mjs",
+      "bytes": 5510,
+      "sha256": "09931d7ea3ce531c86f3dc3abd78648cfc98e0e5a7b64b3d11e222208de6239f"
+    },
+    {
+      "path": "v3/beta/feature-flag.mjs",
+      "bytes": 2467,
+      "sha256": "8fb39aa1ae64618f85389c73ef92e77a7f83999cd9796a8fe7538c824a6e097a"
+    },
+    {
+      "path": "v3/beta/health-check.mjs",
+      "bytes": 2307,
+      "sha256": "b48f174a5bd6aa4a1ba630aeea9c5955a66513ae4705a85088aa7090212e8cc3"
+    },
+    {
+      "path": "v3/beta/onboarding.mjs",
+      "bytes": 721,
+      "sha256": "68330a4b607310444528cc12f63ded91f905539cdbac050956e51bcbafcc713d"
+    },
+    {
+      "path": "v3/beta/runtime-guard.mjs",
+      "bytes": 8242,
+      "sha256": "0adeed9d01965cf11d7ede8818d78a30b045d6b7c4f895c6d0a6c5a20d4d12a4"
+    },
+    {
+      "path": "v3/director/access-override-manager.mjs",
+      "bytes": 908,
+      "sha256": "2b64cdbc522184d89dbedecf620f3cc3d0855b92c652e80bae08b6a9865f7670"
+    },
+    {
+      "path": "v3/director/console.mjs",
+      "bytes": 1689,
+      "sha256": "dc8d45d278c0fef456787fe6b18c4c2498e4c2d586d4050e8c31505d7d64a992"
+    },
+    {
+      "path": "v3/director/correction-service.mjs",
+      "bytes": 3692,
+      "sha256": "d0add0e39d75610a0a0cff332c01ffe819cd00e5837d95e2d8b7dcd59da40b8a"
+    },
+    {
+      "path": "v3/director/dependency-preview.mjs",
+      "bytes": 5172,
+      "sha256": "e2e01307e00452a5b7925b05bbf344b7722d33793c25bd40e4fd27e756cdc854"
+    },
+    {
+      "path": "v3/director/event-inspector.mjs",
+      "bytes": 4581,
+      "sha256": "3bfb231cdb3b54b5e5fbe4869d88fdfb54704f514c7a1244a82fb9aff1e78cfd"
+    },
+    {
+      "path": "v3/director/event-types.mjs",
+      "bytes": 6345,
+      "sha256": "f94e1d10d95abdfa3b2ec679e8b5b357ceafc553846ee9c5bd0fc427210aff02"
+    },
+    {
+      "path": "v3/director/knowledge-correction.mjs",
+      "bytes": 1784,
+      "sha256": "43e9139a6f167cf84be776d4210386cb36f9ddde6a9889a384507d2e6495b7a2"
+    },
+    {
+      "path": "v3/director/mapping-editor.mjs",
+      "bytes": 2715,
+      "sha256": "599f827744722883dbdd658a3d837f926f12879956fc18bb28c7434e3017e66a"
+    },
+    {
+      "path": "v3/director/projector.mjs",
+      "bytes": 8675,
+      "sha256": "9a7b9b8f3a74054bd53b4948c9e35258e45b8c86321bd8c60aa4a9680b46d184"
+    },
+    {
+      "path": "v3/director/promote-to-canon.mjs",
+      "bytes": 5400,
+      "sha256": "57060f171e57cc592303e6eb5b2aa9fa86716565e27012f2f32ffc965d228120"
+    },
+    {
+      "path": "v3/director/provenance-view.mjs",
+      "bytes": 876,
+      "sha256": "08831b2a5e7e2cd59918dc6a6ea008e17382b8cbd433317c6e15379df15bd188"
+    },
+    {
+      "path": "v3/director/undo-canon.mjs",
+      "bytes": 3150,
+      "sha256": "4273d799362cd4e00b13708a39abfab6c02959b305e2573e1182bcbf7e6ef855"
+    },
+    {
+      "path": "v3/director/user-locks.mjs",
+      "bytes": 2082,
+      "sha256": "ec2bac199681ce8f773586c47a8cea3bcb69869d799acc8b13a4054290b3f67e"
+    },
+    {
+      "path": "v3/domain/calls/call-event-types.mjs",
+      "bytes": 4149,
+      "sha256": "fadcad60b81cf9f9d225b67609bbd211be36241ed63f7356f6dc06741a3302c6"
+    },
+    {
+      "path": "v3/domain/calls/call-projector.mjs",
+      "bytes": 10979,
+      "sha256": "309012eaa0209e5bcea361c1b5dde6cdc5906d1d4afa7f8fa9d3b43e533ddd60"
+    },
+    {
+      "path": "v3/domain/calls/call-service.mjs",
+      "bytes": 20762,
+      "sha256": "09709817a50d1f4be145b036f1727b00762368e13a287406275007690cae5194"
+    },
+    {
+      "path": "v3/domain/calls/call-session.mjs",
+      "bytes": 2752,
+      "sha256": "61fd2ad91e095b1d24b81ca0791d732b643e666d3c53270a31ef6f95e4d3ae24"
+    },
+    {
+      "path": "v3/domain/calls/call-state-machine.mjs",
+      "bytes": 1214,
+      "sha256": "1b4cdbbc0264962b8e649857fc610353f9795b27e22f824f510c63aa5eddd96b"
+    },
+    {
+      "path": "v3/domain/calls/call-transcript.mjs",
+      "bytes": 1128,
+      "sha256": "14f67c2255b5a0959c949a3d80f92568fe1f75fce613a02ee4a39e49332bb97b"
+    },
+    {
+      "path": "v3/domain/calls/voicemail.mjs",
+      "bytes": 1070,
+      "sha256": "f5f1c88a514a5c26b703b0164bf4d774ee620e75669a4c98fe0dd7db18175f7c"
+    },
+    {
+      "path": "v3/domain/contacts/contact-link.mjs",
+      "bytes": 400,
+      "sha256": "962df140295f2de42d8c0bd590c14984f7f29241e059b1550af33dfb46d951fb"
+    },
+    {
+      "path": "v3/domain/contacts/contact-point.mjs",
+      "bytes": 292,
+      "sha256": "892eba83defaa69c75d842510156cd7d523cc1bea6fd038fff9fe62d6ede3bef"
+    },
+    {
+      "path": "v3/domain/contacts/contact-service.mjs",
+      "bytes": 6524,
+      "sha256": "d7e8c09197cfd82fa9238da87ee1cabb2e661cc28e524c28d6864d2aa1046fbc"
+    },
+    {
+      "path": "v3/domain/contacts/discovery-provenance.mjs",
+      "bytes": 963,
+      "sha256": "c3bb4f3ca43bef0d3a5b19633b7f0c7df52425e2ddb37d3c2da94aab5a086cb2"
+    },
+    {
+      "path": "v3/domain/contacts/phone-number.mjs",
+      "bytes": 561,
+      "sha256": "0650239601ec9e06ab351969900f674fe2dcb623cf568e22075f60018f13f089"
+    },
+    {
+      "path": "v3/domain/events/causality.mjs",
+      "bytes": 2814,
+      "sha256": "a51f3f47fc9f0936373e114358fc7eff057f8f6a9665ec54ae2c49dacceb344a"
+    },
+    {
+      "path": "v3/domain/events/event-envelope.mjs",
+      "bytes": 1848,
+      "sha256": "c96438bc1696c041465fab2013d785274337118ab4103a4b6650e31428b195d1"
+    },
+    {
+      "path": "v3/domain/events/event-transaction.mjs",
+      "bytes": 30105,
+      "sha256": "b68a98dc3b485c80f75cade9d9147b897ae1fe117d8d165751d94c6e94d2042f"
+    },
+    {
+      "path": "v3/domain/events/event-types.mjs",
+      "bytes": 2400,
+      "sha256": "d5e3094f21a1ef39f289e2a7a871e514dc17a8d40d23534fcffb5f456961f2f0"
+    },
+    {
+      "path": "v3/domain/events/event-validator.mjs",
+      "bytes": 3123,
+      "sha256": "ecdd1901cddb89681083ad5261ba9c4325a32aff346a56e0d033d1da18914e09"
+    },
+    {
+      "path": "v3/domain/events/idempotency.mjs",
+      "bytes": 3954,
+      "sha256": "f7bca6861857f020233ee1d47537cbd7e996f221a5b0cf3d8d5bb58fcf90457c"
+    },
+    {
+      "path": "v3/domain/events/provenance.mjs",
+      "bytes": 742,
+      "sha256": "d1184d5fe90a7a1bdfb24f25a0bac4f6667a5f655c98407f1cf9ca350aa286c7"
+    },
+    {
+      "path": "v3/domain/events/revision-retraction.mjs",
+      "bytes": 1138,
+      "sha256": "1cfe50b268b977b7743ca1dc408cc4909c3a967d4c02b7aa3c3d8f243e0669ba"
+    },
+    {
+      "path": "v3/domain/identity/account.mjs",
+      "bytes": 970,
+      "sha256": "e5db83e0a7b3558a50de0b6919be83667fb2a34df0f393ab146432c64d6afec5"
+    },
+    {
+      "path": "v3/domain/identity/actor.mjs",
+      "bytes": 971,
+      "sha256": "5a3871cbb7f27018b0f539bde30f5f3de4dd365c7119626c52c29ca1760742dc"
+    },
+    {
+      "path": "v3/domain/identity/branch.mjs",
+      "bytes": 990,
+      "sha256": "ce1f181323f35d6903f0acefe1cafd2279cd995a9d43d0976a614f17df31d47a"
+    },
+    {
+      "path": "v3/domain/identity/character-card.mjs",
+      "bytes": 1409,
+      "sha256": "fb95c55fb08cdf5f8d88916b6109f893fc3bd6cc2019dd8d5afa2a5b1ab1f8b0"
+    },
+    {
+      "path": "v3/domain/identity/character-instance.mjs",
+      "bytes": 799,
+      "sha256": "5dfccf41ef82aa8d1197d4d28fa029a301c12545ef6819b833b7cb0187c4e26c"
+    },
+    {
+      "path": "v3/domain/identity/control-authority.mjs",
+      "bytes": 539,
+      "sha256": "b21426ce8fad5d87d3fc22d72565e4ed7651fc1e9d583c41516170e084fbad7a"
+    },
+    {
+      "path": "v3/domain/identity/device.mjs",
+      "bytes": 831,
+      "sha256": "9f184f3e11c9bcd41c2e6cb7da88844889f230346018799ee6f35fbf1dca242d"
+    },
+    {
+      "path": "v3/domain/identity/id.mjs",
+      "bytes": 1778,
+      "sha256": "c13bfdb30d6399077a2782128aaaedc7d06e30c035f7274fec2f19ec2327a31d"
+    },
+    {
+      "path": "v3/domain/identity/identity-kernel.mjs",
+      "bytes": 22891,
+      "sha256": "3e6c843e6dbb4f8e70eb03700c800aa7ee00d328244e25d9308e70c7c18582d6"
+    },
+    {
+      "path": "v3/domain/identity/identity-mapping.mjs",
+      "bytes": 3475,
+      "sha256": "d905f7269a9cca276bcc4698db6f651df73aab4a6bb9afe8aa8e88c5a02eacfd"
+    },
+    {
+      "path": "v3/domain/identity/identity-record.mjs",
+      "bytes": 1736,
+      "sha256": "e3598bd1d11735d11a3eb984ae400fa6f544268196f987dc9c1d5e81dedfbc09"
+    },
+    {
+      "path": "v3/domain/identity/story.mjs",
+      "bytes": 701,
+      "sha256": "ca37546e8b5bb9f3de0f3969e97670e7b2449f119d05f8249695053c54643964"
+    },
+    {
+      "path": "v3/domain/knowledge/audience-policy.mjs",
+      "bytes": 2731,
+      "sha256": "cf5ffcb8f265c0124075ad6a131bb4bebc9b0816dd60c265afd3aee522bcea69"
+    },
+    {
+      "path": "v3/domain/knowledge/claim.mjs",
+      "bytes": 1705,
+      "sha256": "ac30afefdc03f4ef126bfdaf2a7471db020f523420b40e50b686897db2cda20d"
+    },
+    {
+      "path": "v3/domain/knowledge/disclosure-observation.mjs",
+      "bytes": 2867,
+      "sha256": "60c3b03d01a41810f3bc7abfeea29a9981045af8e8be58c0509e76a484938dac"
+    },
+    {
+      "path": "v3/domain/knowledge/evidence-fragment.mjs",
+      "bytes": 1774,
+      "sha256": "4d84356e8e4bf96c7a59cb8545b98534135fcfe58cce6581050cf82d09f48e75"
+    },
+    {
+      "path": "v3/domain/knowledge/grant-projector.mjs",
+      "bytes": 8542,
+      "sha256": "1cf4a37962c1faceca7737d3bb13905db26926435171de59802f8f0960021fb1"
+    },
+    {
+      "path": "v3/domain/knowledge/knowledge-event-types.mjs",
+      "bytes": 4125,
+      "sha256": "01adbeba9239ebfe1b932a2a5214898e7c3f7eccb9d1cf4e0272ad182e968f1b"
+    },
+    {
+      "path": "v3/domain/knowledge/knowledge-grant.mjs",
+      "bytes": 1187,
+      "sha256": "5d94501ef0e99a3c8e793ba2a893a5e7772900d5d0254d08f7f5f1aadbfcd606"
+    },
+    {
+      "path": "v3/domain/knowledge/knowledge-id.mjs",
+      "bytes": 757,
+      "sha256": "ad82e5ae4c261adbd0b1f69f25a6217c2f8532a1585085f3552e1527fe495db2"
+    },
+    {
+      "path": "v3/domain/knowledge/knowledge-service.mjs",
+      "bytes": 10858,
+      "sha256": "bd7cb7686dea6b7c849c603ed490ad335e7a48132ae49287c4536f8f5a127122"
+    },
+    {
+      "path": "v3/domain/knowledge/prompt-context-compiler.mjs",
+      "bytes": 1748,
+      "sha256": "31f362926c77b43f8d72c1daf0c93c30218aedd247af405a4c4c5c44136b3858"
+    },
+    {
+      "path": "v3/domain/knowledge/safe-summary.mjs",
+      "bytes": 1178,
+      "sha256": "7dc7974a498ded563c8a0e8d6395a99fd2a025fb40bc4da8d4c886f3c6f5479c"
+    },
+    {
+      "path": "v3/domain/knowledge/visibility-repository.mjs",
+      "bytes": 5092,
+      "sha256": "1a26168be4c203a4e1ea110eaef6065e25c4f51bb95ccde24f6c0f74f98896ec"
+    },
+    {
+      "path": "v3/domain/live/active-window.mjs",
+      "bytes": 333,
+      "sha256": "d3d0169dba7443a4c2f00d8d0fa9291a1b3b9a958018b0c326236b949d9e2deb"
+    },
+    {
+      "path": "v3/domain/live/archive.mjs",
+      "bytes": 493,
+      "sha256": "c972bdc0863f7e56d16ff70abf1d49a33500edbbce3a5ceb2c56fd3314c44faf"
+    },
+    {
+      "path": "v3/domain/live/live-ai-job.mjs",
+      "bytes": 706,
+      "sha256": "60f089b7395173d86ab14c43c35d6411a3097d9b6bb5cc91d2f37cbf6a5db28d"
+    },
+    {
+      "path": "v3/domain/live/live-event-types.mjs",
+      "bytes": 2188,
+      "sha256": "a737de65812776e13adf8e8edf10c103b0a6b7855ad4f272aece9520fcd03e14"
+    },
+    {
+      "path": "v3/domain/live/live-message.mjs",
+      "bytes": 1072,
+      "sha256": "dda447bc7b7df9549dab513ff2962e78a3b2cd3f5ef42e6e6e41ac861bddadb0"
+    },
+    {
+      "path": "v3/domain/live/live-projector.mjs",
+      "bytes": 9120,
+      "sha256": "4b6817f717f8e56ab17305356e7b9bf1dbcd93c627480f44a7e6d0998400daf2"
+    },
+    {
+      "path": "v3/domain/live/live-service.mjs",
+      "bytes": 33531,
+      "sha256": "4499154786ea9ac2f1cbd031e3cce42ba6e6d91e79ad7175b5180fcc0fe20d9e"
+    },
+    {
+      "path": "v3/domain/live/live-session.mjs",
+      "bytes": 2116,
+      "sha256": "cf4e316f8ba55e2dbbdcc3960f7eec8338beb92706cd4907c34746b1aa502a57"
+    },
+    {
+      "path": "v3/domain/live/reaction.mjs",
+      "bytes": 847,
+      "sha256": "f91854bb5e727eac6535657a3d0d4cf18cc794dc9d97b46ef95d6ab7f9e86c71"
+    },
+    {
+      "path": "v3/domain/live/viewer-persona.mjs",
+      "bytes": 1167,
+      "sha256": "fd3fa9dba9e71e2db90b5e0f4d31d0f180e7a140f39057ce1cfaa4f6256faec1"
+    },
+    {
+      "path": "v3/domain/media/asset-cache.mjs",
+      "bytes": 2181,
+      "sha256": "402c9fb1c6b64beeb26567762bc0a58eaf09b8716da1c3db9da07b1d5f4f5a5f"
+    },
+    {
+      "path": "v3/domain/media/image-provider.mjs",
+      "bytes": 4808,
+      "sha256": "e7e887ef1f1c678930b3e8fc3ea7e433d9b4d0726f73ed723a9f6b429799466a"
+    },
+    {
+      "path": "v3/domain/media/image-selection-policy.mjs",
+      "bytes": 2840,
+      "sha256": "e29e27271c571f3635ae5a206dac2af9c299192e0587cf2aac76f7d5cecf2de2"
+    },
+    {
+      "path": "v3/domain/messaging/membership.mjs",
+      "bytes": 1541,
+      "sha256": "a37cb4aa0c119eab9215c38621e73be574709b5cc858ec4185a3fdd32567f084"
+    },
+    {
+      "path": "v3/domain/messaging/message-extras.mjs",
+      "bytes": 3656,
+      "sha256": "2c52d77c359edc7bd5f731460d31672db482f8adc4319b9a563efca5dd84c9c0"
+    },
+    {
+      "path": "v3/domain/messaging/message-service.mjs",
+      "bytes": 29543,
+      "sha256": "99111c2ab38c88cd85c8876bca9267c974d414cb481de6d66c2877f412d2483f"
+    },
+    {
+      "path": "v3/domain/messaging/message.mjs",
+      "bytes": 1869,
+      "sha256": "18f4d1dec39cda130a9da84f094d5c4f9936b54e99d76dd0650dadbacdd7c684"
+    },
+    {
+      "path": "v3/domain/messaging/messaging-event-types.mjs",
+      "bytes": 4671,
+      "sha256": "b550ef31fc969bf654a48baa357a3cdc9ef263f1f759f389cfec32170bb495e2"
+    },
+    {
+      "path": "v3/domain/messaging/messaging-projector.mjs",
+      "bytes": 14499,
+      "sha256": "00544b7fc598d69d3cacbefe6fdf6bcd922e2e83b4d9f01f13dd9df8847a3798"
+    },
+    {
+      "path": "v3/domain/messaging/thread.mjs",
+      "bytes": 1791,
+      "sha256": "2c6d14bcdc451a03367d410391a8ee3754eddf05e98fcaff301e3e38f50ff4ea"
+    },
+    {
+      "path": "v3/domain/notifications/notification-event-types.mjs",
+      "bytes": 282,
+      "sha256": "7cb88092fa9f247731e11d1ef9f7efe2c3be2beb8ffda1b653f30551bfc460be"
+    },
+    {
+      "path": "v3/domain/notifications/notification-projector.mjs",
+      "bytes": 20835,
+      "sha256": "b311e73555fe30b1f57b564ff726a8cb6fad981bd61e509dd89de964f2ae6b5a"
+    },
+    {
+      "path": "v3/domain/notifications/notification-service.mjs",
+      "bytes": 8295,
+      "sha256": "17eca843cdf59c6274a7e26e42932092cfe06dd8639da569bd2f193895e60702"
+    },
+    {
+      "path": "v3/domain/notifications/notification.mjs",
+      "bytes": 1610,
+      "sha256": "d3fdbe2f72d859677438a0368649690012695b8635d19a732f27ad6b85379c5c"
+    },
+    {
+      "path": "v3/domain/phone/account-session.mjs",
+      "bytes": 1663,
+      "sha256": "7fd89b900ebb36fc81ec0bb8977c1405cc3877ad3de9f283e2a80cfb7ddba662"
+    },
+    {
+      "path": "v3/domain/phone/app-registry.mjs",
+      "bytes": 2355,
+      "sha256": "8f3a017237f9a8b8aed63aef0684015cb7b943d866f0508186bc6173ba4a129b"
+    },
+    {
+      "path": "v3/domain/phone/device-state.mjs",
+      "bytes": 2344,
+      "sha256": "177b73af36f684e81cb69155374b9d07d9a998e1fad16b0acfcdf049e05cc935"
+    },
+    {
+      "path": "v3/domain/phone/phone-event-types.mjs",
+      "bytes": 1049,
+      "sha256": "3908457eba29ab49527b8e5dfbd9b48b6a4ee0e937441957e9bb61c59f5c7894"
+    },
+    {
+      "path": "v3/domain/phone/phone-perspective.mjs",
+      "bytes": 1135,
+      "sha256": "32ef1de58428f9e3f64bf94845f9b506eaa8bda05c79373fe1b32e0c5b0c92c2"
+    },
+    {
+      "path": "v3/domain/phone/phone-projector.mjs",
+      "bytes": 4274,
+      "sha256": "9e57e6533e76603fd7094b6fbd7c4a51fba72ac9203200927b2280b513d2df88"
+    },
+    {
+      "path": "v3/domain/phone/phone-state.mjs",
+      "bytes": 9042,
+      "sha256": "085ad6f1e6ea6972fb47f86f512d678c1dfbd8b869922b881ad325521c150e90"
+    },
+    {
+      "path": "v3/domain/phone/player-access-override.mjs",
+      "bytes": 2320,
+      "sha256": "f398dbf9f4a5e9b1044a18c1a0c6852ec861317f0fe0e7cbd06049cc3301f342"
+    },
+    {
+      "path": "v3/domain/phone/player-access-policy.mjs",
+      "bytes": 2203,
+      "sha256": "1360328f45f6851622a0fadfbb7345220a5a3b2887ab193031a1f08c7efbf10c"
+    },
+    {
+      "path": "v3/domain/phone/possession-access.mjs",
+      "bytes": 326,
+      "sha256": "2002101f72481b2879c90ed5a4fac4fb303d304657b9b7035abc4eafa91bc39a"
+    },
+    {
+      "path": "v3/domain/projections/projection-checkpoint.mjs",
+      "bytes": 580,
+      "sha256": "284c4e0b59b4e1edddec4d68043a71243cdcd4d0688c788dd2c5edcb898dd007"
+    },
+    {
+      "path": "v3/domain/projections/projection-runner.mjs",
+      "bytes": 8943,
+      "sha256": "2e66df515fe6d54f2bc71b22446ec58ee63051e869089302a9f8f1889724f421"
+    },
+    {
+      "path": "v3/domain/social/audience.mjs",
+      "bytes": 1252,
+      "sha256": "9e426b7c449dab2cc27d1fb7895d409bc38d3611988aab7e2ff2269308b39d20"
+    },
+    {
+      "path": "v3/domain/social/comment.mjs",
+      "bytes": 1056,
+      "sha256": "2debea4ffe079810c6278c1d08eda8b3edbca6e0041d4366b683a0b43313a138"
+    },
+    {
+      "path": "v3/domain/social/engagement.mjs",
+      "bytes": 981,
+      "sha256": "7d90bf549eb96fc0f19de9a6f7e737553bdc31e4ab9ee362cdb2c13b5f0d6717"
+    },
+    {
+      "path": "v3/domain/social/insungram-service.mjs",
+      "bytes": 1072,
+      "sha256": "04b04da1915f800cb2647dae2e27a8049fa34ed782caa2afb51e772a29cb2741"
+    },
+    {
+      "path": "v3/domain/social/post.mjs",
+      "bytes": 1162,
+      "sha256": "127cd740bd4301a2640235da77bf48054101b3bc4c30776e5ee2fd3e5a2d5031"
+    },
+    {
+      "path": "v3/domain/social/social-ai-job.mjs",
+      "bytes": 846,
+      "sha256": "a075f41ac4eaed2d7507c185e6141edfb1a9c5630e0ea992a113f108f122907b"
+    },
+    {
+      "path": "v3/domain/social/social-decision.mjs",
+      "bytes": 828,
+      "sha256": "0ca4679e99a30c2f04109d52ef5c8a336ce2ccd7caf15f88e6690c21ad21f4be"
+    },
+    {
+      "path": "v3/domain/social/social-event-types.mjs",
+      "bytes": 3072,
+      "sha256": "dc155a2da85facdbc0a9d95f0a2e2d6a1b0a575eba7cbad0648649c49b6969d8"
+    },
+    {
+      "path": "v3/domain/social/social-graph.mjs",
+      "bytes": 1012,
+      "sha256": "e28deaf940a7e6e3180ecd6a7b90f7a5f09bfc00768aa27e87c26a9e792a8098"
+    },
+    {
+      "path": "v3/domain/social/social-persona.mjs",
+      "bytes": 1863,
+      "sha256": "4e24f7d2fb49745a5cac131b3616fadd8d0fa876e1cf1ff6be45456ab7a89940"
+    },
+    {
+      "path": "v3/domain/social/social-projector.mjs",
+      "bytes": 8831,
+      "sha256": "739df4cdf64f75a952d4231c8a10f90ef9a4c7b5dafb79e942dc134f94731273"
+    },
+    {
+      "path": "v3/domain/social/social-service.mjs",
+      "bytes": 32031,
+      "sha256": "bf701dba0a731eaa45b3deabe0540f7c7307cbbc02357d1fd1f8b05b975faab9"
+    },
+    {
+      "path": "v3/domain/time/activity-session-projector.mjs",
+      "bytes": 4395,
+      "sha256": "1e37d5943a1059df87860b8add1d4e58c59c23124d0d6639cce87dcea531943b"
+    },
+    {
+      "path": "v3/domain/time/activity-session.mjs",
+      "bytes": 2001,
+      "sha256": "aceb0eaa9e946ad3251f2bfd587daf072ecd2554c6ead4ae21111144fe782462"
+    },
+    {
+      "path": "v3/domain/time/chronology-service.mjs",
+      "bytes": 14647,
+      "sha256": "e2ac96b07194ffcd560683970cb943cdeb34c218276db3e04e9aa003b07e18f4"
+    },
+    {
+      "path": "v3/domain/time/clock-anchor.mjs",
+      "bytes": 4394,
+      "sha256": "7ac8adb94dd0adbecd244dbd76e75603f4fc0a08676f4d03c71411e2de9f0191"
+    },
+    {
+      "path": "v3/domain/time/clock-projector.mjs",
+      "bytes": 13279,
+      "sha256": "076aa4e0b70ff29bab822f94e5ac197ae94aaf03e1014a79d52af79bbaa33575"
+    },
+    {
+      "path": "v3/domain/time/clock-reconciliation.mjs",
+      "bytes": 2494,
+      "sha256": "9b8aae8fa21b09ef22c660e5067bf9da8340bb425e5062fb951bf2473bec65f3"
+    },
+    {
+      "path": "v3/domain/time/duration-policy.mjs",
+      "bytes": 1421,
+      "sha256": "a624961c72549e24e70a4d2088b97912b6beda48ad92e0f9764c9d69399e19e7"
+    },
+    {
+      "path": "v3/domain/time/pending-projector.mjs",
+      "bytes": 5761,
+      "sha256": "d6adfa0ca27d4cea214bcb7a9b7f82b2e081c9980cb069ab76a1f1a2c7dbc549"
+    },
+    {
+      "path": "v3/domain/time/pending-world-event.mjs",
+      "bytes": 5253,
+      "sha256": "2a009303e5bc5125af0e9ed5b1c69885ae9ea15ad9fd0df65fb50a8a991fb2ee"
+    },
+    {
+      "path": "v3/domain/time/time-advance.mjs",
+      "bytes": 1798,
+      "sha256": "09cf52d3d5dbd68e5048059598c6edc961403f99c00212cc2fe582ad3da68e38"
+    },
+    {
+      "path": "v3/domain/time/time-event-types.mjs",
+      "bytes": 3558,
+      "sha256": "fc1f27a81805df020a7098b2dc9dd0bd15253cd29bd715c1b10fc842462ae3bc"
+    },
+    {
+      "path": "v3/domain/utilities/phone-world-event-types.mjs",
+      "bytes": 4527,
+      "sha256": "6a513139cda38ef543793ba701bfcf0ec46867f4f433720a0df58ec5a85d9695"
+    },
+    {
+      "path": "v3/domain/utilities/phone-world-projector.mjs",
+      "bytes": 8409,
+      "sha256": "60c305b9ac9fe22f8e967bfeefc96acfed6b3c0e87c063fee1d24babd8bf0169"
+    },
+    {
+      "path": "v3/domain/utilities/phone-world-records.mjs",
+      "bytes": 7846,
+      "sha256": "385ab193d8d655af4d7d57769df5e91f568c395dd56c9131ab86247a946548b5"
+    },
+    {
+      "path": "v3/domain/utilities/phone-world-service.mjs",
+      "bytes": 14072,
+      "sha256": "2c0ae6f264d8b6ee1127c2c3533e515ec9e31a24480b14e7283e376a6a71b168"
+    },
+    {
+      "path": "v3/domain/voice/audio-artifact.mjs",
+      "bytes": 2975,
+      "sha256": "0d032ca9e78914cb4fa25d94f6f6be8e0c7b9e288faa361984870d2f4191dccd"
+    },
+    {
+      "path": "v3/domain/voice/voice-adapter-contract.mjs",
+      "bytes": 2472,
+      "sha256": "f9e2ba27d01d1264639b3e06e742917241fd2103ac2c2c793c8a2f066d15fb7f"
+    },
+    {
+      "path": "v3/domain/voice/voice-capability.mjs",
+      "bytes": 2242,
+      "sha256": "fe8efcb26127b00a25da9f39041623feac95227fc6372d3f50ceaba44617a1c1"
+    },
+    {
+      "path": "v3/domain/voice/voice-preset-catalog.mjs",
+      "bytes": 23817,
+      "sha256": "ce556d3e0cb9afd59081e6f5ae0710511185509f1a0d19334aca6622f726a10a"
+    },
+    {
+      "path": "v3/domain/voice/voice-profile.mjs",
+      "bytes": 5943,
+      "sha256": "7810c50a15be5799572495ccb0e358ca77f7d904e779783842751dd2dfd96607"
+    },
+    {
+      "path": "v3/handoff/commit-coordinator.mjs",
+      "bytes": 9675,
+      "sha256": "8e7410a0fabb7b8ffa53b18d09629a1c7b8575cc34b82e90057fea13323992b1"
+    },
+    {
+      "path": "v3/handoff/deterministic-extractor.mjs",
+      "bytes": 3700,
+      "sha256": "d4b87ec6de08b4ed116ffbe36293eda4e495ed76b51ea6c04e9439dd47611e3a"
+    },
+    {
+      "path": "v3/handoff/handoff-projector.mjs",
+      "bytes": 5546,
+      "sha256": "1415cd6c9ae709ffa8dd5463dfe6477bf8a728899e51d032bcb5a4e96378a6d5"
+    },
+    {
+      "path": "v3/handoff/handoff-query-repository.mjs",
+      "bytes": 2083,
+      "sha256": "98ae34e81e0ffbbca76b0c241228c18864588cc5ff3dcc2c91616b1937ed08e8"
+    },
+    {
+      "path": "v3/handoff/identity-resolver.mjs",
+      "bytes": 4571,
+      "sha256": "0dd19c633522644943ff15f16479e024e30ff83ffda2cd5a9d98eb4226008a10"
+    },
+    {
+      "path": "v3/handoff/proposal-repository.mjs",
+      "bytes": 2631,
+      "sha256": "050e112cff429ab0543b0d685321321a986ad2780ea8eb7e50f3b7a259806869"
+    },
+    {
+      "path": "v3/handoff/proposal.mjs",
+      "bytes": 3636,
+      "sha256": "a6a4c1f9ee434d177a0c1f8b1527dc00f0594adaea2937c665fcc12c45422bc7"
+    },
+    {
+      "path": "v3/migration/preview37/call-translator.mjs",
+      "bytes": 1860,
+      "sha256": "786923e2eb691ce4de4202d990917bf2d99d6bfe6543ec825c2dde48b4607cc3"
+    },
+    {
+      "path": "v3/migration/preview37/conflict-report.mjs",
+      "bytes": 1058,
+      "sha256": "8420136974f178e6ccd6a14fa9c47d4db1fcc10ddde762b415e19663778e4097"
+    },
+    {
+      "path": "v3/migration/preview37/constants.mjs",
+      "bytes": 1450,
+      "sha256": "3c5a7c9903ae95846f2c8ef862af7cec4e95b3b8b37a9acf53c1f2807ae5aeea"
+    },
+    {
+      "path": "v3/migration/preview37/coordinator.mjs",
+      "bytes": 28309,
+      "sha256": "c63fbab27ef6cdf16491417217195f641629bb93a2c45dabf13be17952ceb3b7"
+    },
+    {
+      "path": "v3/migration/preview37/digest.mjs",
+      "bytes": 458,
+      "sha256": "30e6f632fa9ba785a0dea6a6edc0bd17bf59f13e45e56d50217dc4e13e865088"
+    },
+    {
+      "path": "v3/migration/preview37/identity-translator.mjs",
+      "bytes": 2169,
+      "sha256": "ed1fd65f64f858c27d0d650bd3c7b829b1ae59d3e32377c83a413b1f0c5db0f9"
+    },
+    {
+      "path": "v3/migration/preview37/inventory.mjs",
+      "bytes": 6118,
+      "sha256": "8ab5fff0928aacfff32c9ab456f158d3215f0185ffecc84c2e8f4e7d884dbf69"
+    },
+    {
+      "path": "v3/migration/preview37/manifest.mjs",
+      "bytes": 16421,
+      "sha256": "15e4fb425ea5af8b389311f343e9d7a401af22a2c68f16096859c0fb543d02e0"
+    },
+    {
+      "path": "v3/migration/preview37/message-translator.mjs",
+      "bytes": 2568,
+      "sha256": "535566d5ea633f83f42e9c6c83c9521ec90d6c1f79e16a61ecb0b8d1a5015ca2"
+    },
+    {
+      "path": "v3/migration/preview37/personal-app-importer.mjs",
+      "bytes": 10993,
+      "sha256": "76162fca5f334ae28a527200f55e32c7b962daef6b80b27f9d6080163fd8bc10"
+    },
+    {
+      "path": "v3/migration/preview37/personal-app-translator.mjs",
+      "bytes": 14777,
+      "sha256": "455f35511c6f17598fd5733a5f7a4cc9571d566e8ecf8cb478329a8d4c43169c"
+    },
+    {
+      "path": "v3/migration/preview37/raw-reader.mjs",
+      "bytes": 4027,
+      "sha256": "3bf699389391433cb784a73528747b9535376c6f3882e8483a9b06df89e23ed3"
+    },
+    {
+      "path": "v3/migration/preview37/scope-mapper.mjs",
+      "bytes": 1513,
+      "sha256": "6e726be6b281310223ebbb5a66829c6999c4415ed12111130c34ac839968f240"
+    },
+    {
+      "path": "v3/migration/preview37/source-normalizer.mjs",
+      "bytes": 1740,
+      "sha256": "33ea653b5fdcfa2cf20013fbf7dd122e673c900ddadf4aa7b5f3656f7ded544a"
+    },
+    {
+      "path": "v3/migration/preview37/thread-translator.mjs",
+      "bytes": 1614,
+      "sha256": "26502a401495b84d092eff8aeedd3a3c2d91898fc4c5e22c67395626cf7a8cfc"
+    },
+    {
+      "path": "v3/migration/preview37/validator.mjs",
+      "bytes": 3127,
+      "sha256": "2bd7f46d2f4586c232478330627aedf81703c62a6b775092467f09d5d8dfa1a0"
+    },
+    {
+      "path": "v3/platform/image-providers/pixabay.mjs",
+      "bytes": 4320,
+      "sha256": "88761c2db974f22bc89487e3b1bf5802ad0e585c3a6beb9f28085916b724b7df"
+    },
+    {
+      "path": "v3/platform/sillytavern/call-continuation-driver.mjs",
+      "bytes": 838,
+      "sha256": "6879e7b094e105de302d229d3bc7a66d86feda2197efe9b27867c00465fe50c7"
+    },
+    {
+      "path": "v3/platform/sillytavern/message-events.mjs",
+      "bytes": 2414,
+      "sha256": "7defd5d9af478b9b3db5f5a6461ce145ea591d3ce42b2fb5ecb4a30e12fd5be5"
+    },
+    {
+      "path": "v3/platform/sillytavern/runtime-integration.mjs",
+      "bytes": 13904,
+      "sha256": "0f4b99b8b6c633d4d5dfbdb72792cd34821661fc99d97d8cca13b1c17bffeb05"
+    },
+    {
+      "path": "v3/platform/sillytavern/scope-resolver.mjs",
+      "bytes": 1635,
+      "sha256": "b0fc2855507456c522fb6cdaa78b1a11df1eab2029f2a4fc2bb3442e73886320"
+    },
+    {
+      "path": "v3/platform/voice/runtime-pack-release.mjs",
+      "bytes": 203,
+      "sha256": "bd2d638417dc5eecdcaa5343988838efefb9e1dbfd340120e603aa9533c6756f"
+    },
+    {
+      "path": "v3/platform/voice/tmrw-local-voice-adapter.mjs",
+      "bytes": 19163,
+      "sha256": "dcab927a33dedec1ce505f6693eaf9deb35f07d531d58cc8735fa3d0ee5095ed"
+    },
+    {
+      "path": "v3/platform/voice/tmrw-voice-manager-client.mjs",
+      "bytes": 3955,
+      "sha256": "42b08f862e6b6937635eb89343451ebc9e1d18144b6365bca856894cd2f38976"
+    },
+    {
+      "path": "v3/production/active-startup.mjs",
+      "bytes": 35473,
+      "sha256": "e01e5d888b49d7db7f402ea701152cdd92df0de25cfc2cd8516628fe93f69951"
+    },
+    {
+      "path": "v3/production/authoring-gate.mjs",
+      "bytes": 4050,
+      "sha256": "b9b6ada7cf43b1a63d17123d44853f3ca360aed03784a1bde22e7d5b044c2614"
+    },
+    {
+      "path": "v3/production/composition-root.mjs",
+      "bytes": 48365,
+      "sha256": "ccc9cd046ba9538e14302d91842fce7415a96d8e0f36072b2bf2f3923600baf8"
+    },
+    {
+      "path": "v3/production/constants.mjs",
+      "bytes": 463,
+      "sha256": "dd2c616b22b4285f18854544445f9ec3cdeb3c8ef7ed6202572d3e2a6cbefca7"
+    },
+    {
+      "path": "v3/production/context-source-adapter.mjs",
+      "bytes": 5257,
+      "sha256": "2731b749e86cd131128a38551bef00d2a43e36523592574815a39a311eff1405"
+    },
+    {
+      "path": "v3/production/entry.mjs",
+      "bytes": 9110,
+      "sha256": "56f97a3fe14e75398a0b0ea443c474f241ce319358f7736edd99ddd09047157e"
+    },
+    {
+      "path": "v3/production/fenced-database.mjs",
+      "bytes": 5007,
+      "sha256": "b967e837bbd324b7c64726cdeee6355be499b3cffd19c4f182cef5207e95c6af"
+    },
+    {
+      "path": "v3/production/generation-interceptor-owner.mjs",
+      "bytes": 5636,
+      "sha256": "a2ab2b4043371ca9a50af251070d4fc8e98b5d74f610d0f32925b9014754cf9d"
+    },
+    {
+      "path": "v3/production/identity-binding-resolver.mjs",
+      "bytes": 11273,
+      "sha256": "f46ca96f28ef2c3ddf35505286d7d908ef4a1ab2f19b6b0a35b59ef125c27dab"
+    },
+    {
+      "path": "v3/production/launcher-owner.mjs",
+      "bytes": 11334,
+      "sha256": "6919bd408c81233281e54d4513c005dcaef75503845bd78899fc35ed2a108a55"
+    },
+    {
+      "path": "v3/production/lease-heartbeat.mjs",
+      "bytes": 8836,
+      "sha256": "743a0d84f88df089cea87303742af7658ea034e5213ea6f5ecd2c60779f3eb7d"
+    },
+    {
+      "path": "v3/production/listener-owner.mjs",
+      "bytes": 5230,
+      "sha256": "02a7359910405ffed489979f9086f9ffcead03b68c4e10e4e615209aaad22c4a"
+    },
+    {
+      "path": "v3/production/mount-manager.mjs",
+      "bytes": 14712,
+      "sha256": "21609cc33779b6297495f996ffc6833a4d24622ba874e086222f12fc5683e5df"
+    },
+    {
+      "path": "v3/production/passive-preflight.mjs",
+      "bytes": 10695,
+      "sha256": "b3f1d1c4c7d2ac52d886d9f1f1567e3b78b7ba291ba5dd70c0f2201c3fff63cd"
+    },
+    {
+      "path": "v3/production/production-activation.mjs",
+      "bytes": 3910,
+      "sha256": "65bc552762dd560b79d3e24cd7acab59b4ea146610a4c897c51a8867196719c6"
+    },
+    {
+      "path": "v3/production/production-health.mjs",
+      "bytes": 3602,
+      "sha256": "c2779f4e712d2ddd44f7aa9662e98f1ecaab9e313525fc2c42895e03e8c2f86b"
+    },
+    {
+      "path": "v3/production/runtime-arbiter.mjs",
+      "bytes": 7494,
+      "sha256": "fbcf7a2d7db872af98561fc9a1d45c96c4b1c4c5f7f7ea9949df8842ff477cef"
+    },
+    {
+      "path": "v3/production/shutdown-controller.mjs",
+      "bytes": 7470,
+      "sha256": "c5d8d6396b8901a790e1c0d73489a84f9bbcdbe73357326e32c5fd9e32665014"
+    },
+    {
+      "path": "v3/production/sillytavern-extension-control.mjs",
+      "bytes": 4094,
+      "sha256": "0c867a23723f5c9500cfe76bf4dd1a9d27e24b833b63c82081efa306392b5df0"
+    },
+    {
+      "path": "v3/production/user-control.mjs",
+      "bytes": 24688,
+      "sha256": "7618cda6924db1abbf44aabea5fc52edf0b639e7e3b67d2de1473fa7de44fa1d"
+    },
+    {
+      "path": "v3/prompt/phone-context-injector.mjs",
+      "bytes": 1603,
+      "sha256": "6c2ccb1120ec7df5f0b34ebf26363d41998d3f0c7d543b390549e467a4ecee10"
+    },
+    {
+      "path": "v3/storage/errors.mjs",
+      "bytes": 2516,
+      "sha256": "660cdd1a92092e51afeee05bebdd06333ee954827701518b2023e2f08d541fa9"
+    },
+    {
+      "path": "v3/storage/memory-v3-database.mjs",
+      "bytes": 22391,
+      "sha256": "2c4435ef5b2a8bb9bec2c8279d1d4521eb8cd77195d385531a9d76251b944f5d"
+    },
+    {
+      "path": "v3/storage/migrations.mjs",
+      "bytes": 7809,
+      "sha256": "96c680b757243272a3aedd341fffc5cdb2ea345475cdc8e00b7f49a5de5bc131"
+    },
+    {
+      "path": "v3/storage/repositories.mjs",
+      "bytes": 6688,
+      "sha256": "4daffe557cd13d2f9e649ad19e193ca1229a444e78e4060aff165399c469217e"
+    },
+    {
+      "path": "v3/storage/schema.mjs",
+      "bytes": 38761,
+      "sha256": "462fb6e9528b006541a8f0c987a449282ec43ea8d9a94a3f397533b350db1d64"
+    },
+    {
+      "path": "v3/storage/unit-of-work.mjs",
+      "bytes": 981,
+      "sha256": "dbd2a72de4ea338595a34d109d86db49871171f496160111165cb8b39285f5f2"
+    },
+    {
+      "path": "v3/storage/v3-database.mjs",
+      "bytes": 5953,
+      "sha256": "1489abbd7961f7ef6ad5d1e6461ff573bf5c6d4ba979376b450df595414256e8"
+    },
+    {
+      "path": "v3/ui/app-empty-state.mjs",
+      "bytes": 7018,
+      "sha256": "68c41ada8413077b826a44ef3f4ec2a704be4172c100314c6d5d1159b30fcd9f"
+    },
+    {
+      "path": "v3/ui/app-icons.mjs",
+      "bytes": 8726,
+      "sha256": "2c4a139982182e4d3c60de42d52590e0ed6f1d211585e1b0feee23940a13ae26"
+    },
+    {
+      "path": "v3/ui/calendar.mjs",
+      "bytes": 13895,
+      "sha256": "7a9038c532fbdccbbf4f9965dddfd9f9a042a4b474b3b4021855076d856a4643"
+    },
+    {
+      "path": "v3/ui/call-authority.css",
+      "bytes": 12791,
+      "sha256": "3ef37a0ee0ac831aa55b1aefc9c3c04ff323fc6246a31a36672dd67d8b5145a3"
+    },
+    {
+      "path": "v3/ui/calls/active.mjs",
+      "bytes": 1105,
+      "sha256": "3f25012e38c09fa0d19ea837a3048e54b6bb232f67e44e599dd1000026c9c425"
+    },
+    {
+      "path": "v3/ui/calls/approved-call-surface.mjs",
+      "bytes": 18146,
+      "sha256": "19cb988a4f4f08e6d648d8426ce4615594e3c6138188d8aaa020f7cd4c562528"
+    },
+    {
+      "path": "v3/ui/calls/call-island.mjs",
+      "bytes": 1543,
+      "sha256": "0cd7bf68ab88dad404bba0e81d11b30a510f2cba297e14ab4c0af3e9c0fc5227"
+    },
+    {
+      "path": "v3/ui/calls/call-ui-owner.mjs",
+      "bytes": 2097,
+      "sha256": "02319b907ab0f9bd8efc2d81b77c016ebda665fbef5c17037798c90ebc0b0198"
+    },
+    {
+      "path": "v3/ui/calls/call-voice-playback.mjs",
+      "bytes": 3632,
+      "sha256": "00f94e3a982ed2a1d8eff8ee2947d73ed6f921a299835600e00342da510e0f26"
+    },
+    {
+      "path": "v3/ui/calls/details.mjs",
+      "bytes": 3845,
+      "sha256": "cc18a3d414aedb6bf2a7449c354388478db10638b0a763a92a13056c84c0e0ff"
+    },
+    {
+      "path": "v3/ui/calls/ended.mjs",
+      "bytes": 897,
+      "sha256": "2eb5d3321f3a8a45b0efed2cfcfbd8a9815dbc1ee69ec9cae488e2b71214d6fb"
+    },
+    {
+      "path": "v3/ui/calls/history.mjs",
+      "bytes": 4701,
+      "sha256": "c4ec5863903227929b8a0634979cc0963eb361dd9f35972596b78c915d584730"
+    },
+    {
+      "path": "v3/ui/calls/incoming.mjs",
+      "bytes": 646,
+      "sha256": "8d65cf36fa6d08654d1dcd5a2680baa9b832f6af59dd0eafad70b00aea648e8c"
+    },
+    {
+      "path": "v3/ui/calls/outgoing.mjs",
+      "bytes": 546,
+      "sha256": "436785487048051e19e8fe7adb0c7b920fb26f76771bcc96cc804013dbf36886"
+    },
+    {
+      "path": "v3/ui/contacts-minimal.mjs",
+      "bytes": 474,
+      "sha256": "0b02d3f81d4e6a888be48ac2f1919a32c1f6bc33dbd493da4525a4f9ff2458d2"
+    },
+    {
+      "path": "v3/ui/dev-diagnostics.mjs",
+      "bytes": 810,
+      "sha256": "d18beaf992947f78c71f51c1876cb7a556c22000ea75891d7a1361af919a0c5f"
+    },
+    {
+      "path": "v3/ui/experience-presets.mjs",
+      "bytes": 1169,
+      "sha256": "112e548e363c5a15f4dadd2aebf57786075d91d5c8189954693849f8eddc2066"
+    },
+    {
+      "path": "v3/ui/feed.mjs",
+      "bytes": 1171,
+      "sha256": "34b7762c06eefd95339dbf88839363547a83fbeea24ee03b810e6551512fc65c"
+    },
+    {
+      "path": "v3/ui/files.mjs",
+      "bytes": 4010,
+      "sha256": "3622e37a20df98ac95f2b5b55f6d2647a5bfdccc3178ac241873d9758000f932"
+    },
+    {
+      "path": "v3/ui/gallery.mjs",
+      "bytes": 4697,
+      "sha256": "bb0153ebbe4db2c13a3ed701bda796487213d7ed5dce1e6d0c07601ecf1fb0f4"
+    },
+    {
+      "path": "v3/ui/guide.mjs",
+      "bytes": 5165,
+      "sha256": "0b6f314c5c722cc6d223f2a889dbd50c15e47bc061863e5d531f6a8a33295213"
+    },
+    {
+      "path": "v3/ui/health.mjs",
+      "bytes": 9002,
+      "sha256": "d726a20396fc8d679ab1d32495185608831a5671c1054eb712b985d7343adcd5"
+    },
+    {
+      "path": "v3/ui/living-state.mjs",
+      "bytes": 2472,
+      "sha256": "db52ccbc993f8255d91e00e0eccdb7ff3de5bd04b8f4c37b3c02a12445bac6dd"
+    },
+    {
+      "path": "v3/ui/maps.mjs",
+      "bytes": 7142,
+      "sha256": "dc57c9a226b2b2af61dccc5ba5a6aac2c79ae06b9e26d6442c0a2f15f006560f"
+    },
+    {
+      "path": "v3/ui/notes.mjs",
+      "bytes": 8516,
+      "sha256": "5b14625ef7e76fc79931ef4e05215a127d6e0189b1931385fe41d89423bc5d2e"
+    },
+    {
+      "path": "v3/ui/notifications.mjs",
+      "bytes": 439,
+      "sha256": "c0ea85c728be2bbf474898381ec0c83839e92ce69620f623d3eead49d31fcd29"
+    },
+    {
+      "path": "v3/ui/preview37-authority.css",
+      "bytes": 158779,
+      "sha256": "28acdea0bea31c2733524d160c0812781e2b9540d46ee5086d515aed65b45b8e"
+    },
+    {
+      "path": "v3/ui/preview37-surface.mjs",
+      "bytes": 24703,
+      "sha256": "b99e4e210d3abe090eb480fa0f5837020f7f4c7f06c00837d31846e8756dfb36"
+    },
+    {
+      "path": "v3/ui/provider-settings.mjs",
+      "bytes": 3116,
+      "sha256": "48da34a7b12f32f21acc1fdbb198435399f135593a5312ded438b3bd2fa36c31"
+    },
+    {
+      "path": "v3/ui/router.mjs",
+      "bytes": 674,
+      "sha256": "e1826a1aeb0f64ac370b7064fd5a9b37c7bbe7ff2b33f9f0d9719161e31fa78a"
+    },
+    {
+      "path": "v3/ui/search.mjs",
+      "bytes": 7095,
+      "sha256": "a6ff16475ba6e44fd09c50c634e34dd2ee46daae6275abd0e2c78f5ce0dec75f"
+    },
+    {
+      "path": "v3/ui/settings-beta.mjs",
+      "bytes": 14111,
+      "sha256": "76abf353cb36d2110a4484c6e30249ffe16ce123c32f7ed5b99e1361a89c35d3"
+    },
+    {
+      "path": "v3/ui/shell.mjs",
+      "bytes": 205238,
+      "sha256": "ec673bc2ecd903e3ce20a9c01e4b7c8c5aeaaf39fa19cc29f35aa9ba9fc88d1a"
+    },
+    {
+      "path": "v3/ui/shop.mjs",
+      "bytes": 11167,
+      "sha256": "d2512ba962f90da66ccc57f26c7d32b30c757c831463861b47fb8cc134b314ea"
+    },
+    {
+      "path": "v3/ui/styles.css",
+      "bytes": 20018,
+      "sha256": "1e700c46a961a928648898fc26b807c2b6e4a28eeb8ce28296057987747c25da"
+    },
+    {
+      "path": "v3/ui/themes.mjs",
+      "bytes": 1858,
+      "sha256": "69231a49e89c51242e3aa2aefbe935d68b16d7bcdbfb6be6d76ce08e5a8697c7"
+    },
+    {
+      "path": "v3/ui/view-models.mjs",
+      "bytes": 47245,
+      "sha256": "c8302b38a2a6f9d29188b016be7613e2a1cec837119e993e681f93f22d9ff223"
+    },
+    {
+      "path": "v3/ui/voice-setup.mjs",
+      "bytes": 17537,
+      "sha256": "92851fa2c7a520be58d3f58a0bec0943df2563e3698891e36d604db55b620f94"
+    },
+    {
+      "path": "v3/ui/wallet.mjs",
+      "bytes": 8185,
+      "sha256": "01bc3246fdca2532554c1ef3b2a63e11a369a9ca6557269ca63b10c6aed96020"
+    },
+    {
+      "path": "v3/ui/weather.mjs",
+      "bytes": 4708,
+      "sha256": "54dc379d9932d5b02b45012527ae9a4423e69350be4344799f40c7ac1070dbf8"
+    },
+    {
+      "path": "voice-packs/previews/female-bright-natural-en.wav",
+      "bytes": 192044,
+      "sha256": "9e47baceea4e81d52f9777df453a37ce2b58f5d4730d9565ab0e29218e7b9aae"
+    },
+    {
+      "path": "voice-packs/previews/female-bright-natural-ja.wav",
+      "bytes": 215084,
+      "sha256": "faf37db32a4459b25cf46eef871a6e23a7afb6245288d373f99e465a988296aa"
+    },
+    {
+      "path": "voice-packs/previews/female-bright-theatrical-en.wav",
+      "bytes": 156204,
+      "sha256": "00e062bc1a1f5312967097d8804def1dc28d05f5f0433d11006c4e839ce099bd"
+    },
+    {
+      "path": "voice-packs/previews/female-bright-theatrical-ja.wav",
+      "bytes": 189484,
+      "sha256": "edf05e0dd0f0cba1c324cd0645d428e5c09778d50573bb9368e1b7eb5d950089"
+    },
+    {
+      "path": "voice-packs/previews/female-clear-soft-en.wav",
+      "bytes": 184364,
+      "sha256": "5a5a33b339a25206408faf38dc9d984227cb086efbd13921c760645941161352"
+    },
+    {
+      "path": "voice-packs/previews/female-clear-soft-ja.wav",
+      "bytes": 233004,
+      "sha256": "995e8fc719da2c4ff4b97970b3793e8eeb15f4b784d33345d0b0847d2051754d"
+    },
+    {
+      "path": "voice-packs/previews/female-cool-reserved-en.wav",
+      "bytes": 238124,
+      "sha256": "4a85f0b966be7ffe3c89b364276c0f9105368cd8173b19faba50b41dead55d79"
+    },
+    {
+      "path": "voice-packs/previews/female-cool-reserved-ja.wav",
+      "bytes": 243244,
+      "sha256": "7fad7a594132611a829a2189ca1e6bb019a6a0baf044886a073afc46da1178bb"
+    },
+    {
+      "path": "voice-packs/previews/female-dark-restrained-en.wav",
+      "bytes": 258604,
+      "sha256": "9b4471280c6602b0182d9b9e6d670d7fd27eda9fd5ab0d99750ee4ee30854119"
+    },
+    {
+      "path": "voice-packs/previews/female-dark-restrained-ja.wav",
+      "bytes": 225324,
+      "sha256": "d2b95a1a0a294e4e97101d5a96d42644a8609f876afc12ce2b06736acd0b0285"
+    },
+    {
+      "path": "voice-packs/previews/female-elegant-alluring-en.wav",
+      "bytes": 258604,
+      "sha256": "f9bd34eee30a1ae31643c161316960f8780290a7077bdbde738100e434795b0c"
+    },
+    {
+      "path": "voice-packs/previews/female-elegant-alluring-ja.wav",
+      "bytes": 335404,
+      "sha256": "acc899b423b48607144987f6ba439b104dd4466686f750844adfeefd1f4bcde5"
+    },
+    {
+      "path": "voice-packs/previews/female-elegant-tease-en.wav",
+      "bytes": 233004,
+      "sha256": "231ccf16a5f7137a8ce15842a86138e92f0ae6cfd3e877eec78f9e2ef5b6dc57"
+    },
+    {
+      "path": "voice-packs/previews/female-elegant-tease-ja.wav",
+      "bytes": 263724,
+      "sha256": "91bf711d0ee453f87567ddfe174c2883cc44d5209b943504aa4ddc4c3a3da45e"
+    },
+    {
+      "path": "voice-packs/previews/female-gentle-soft-en.wav",
+      "bytes": 263724,
+      "sha256": "2ff97ba39a5686ffc96a3a75c3ff55dd9bed9ffb77b6327af613349f102b5519"
+    },
+    {
+      "path": "voice-packs/previews/female-gentle-soft-ja.wav",
+      "bytes": 273964,
+      "sha256": "254b10e5b5dcdd249626e78534ed50da3636a6352d0b5638a3b5f8b676f0b791"
+    },
+    {
+      "path": "voice-packs/previews/female-low-husky-en.wav",
+      "bytes": 212524,
+      "sha256": "47d84527ed14f0d361b2d81b63baee9d5f749a0e325d012f2d4eff5fae7176e8"
+    },
+    {
+      "path": "voice-packs/previews/female-low-husky-ja.wav",
+      "bytes": 220204,
+      "sha256": "cb77747c6066a3039cf39ac2d60e848b8c416f5cca1777ced6e48a510cbcc85b"
+    },
+    {
+      "path": "voice-packs/previews/female-playful-mischievous-en.wav",
+      "bytes": 202284,
+      "sha256": "91957fb24f6e82788ad3e0c3abfe3c89938310ec1be173e35e17a2067da14057"
+    },
+    {
+      "path": "voice-packs/previews/female-playful-mischievous-ja.wav",
+      "bytes": 225324,
+      "sha256": "c1ad532aad1175074789aca3befb89262bc1aaed098b8c8b5c37e18771a78509"
+    },
+    {
+      "path": "voice-packs/previews/female-seductive-dangerous-en.wav",
+      "bytes": 230444,
+      "sha256": "585b09db6e1d08169e71d871bb428c63a687927995811fddd96e2d03e1c4af53"
+    },
+    {
+      "path": "voice-packs/previews/female-seductive-dangerous-ja.wav",
+      "bytes": 268844,
+      "sha256": "41fec5bee71fb0bb20cc11a03363a1be2f7cb627622d729c27423f41eaf7e3d4"
+    },
+    {
+      "path": "voice-packs/previews/female-warm-mature-en.wav",
+      "bytes": 220204,
+      "sha256": "ca56722d6173929d2a7bd010878bf8e13c7133daaf765deb96714c1afc2b5ddf"
+    },
+    {
+      "path": "voice-packs/previews/female-warm-mature-ja.wav",
+      "bytes": 248364,
+      "sha256": "84a5fd104bcc8f259a9fbaa1e06a4892f87fca0556d156fed7096a960a112084"
+    },
+    {
+      "path": "voice-packs/previews/male-clever-charmer-en.wav",
+      "bytes": 169004,
+      "sha256": "f31fa29fb7abcf0c5d84ca87f829f5179f508df517e54a8a9a6dd7f89d6ce059"
+    },
+    {
+      "path": "voice-packs/previews/male-clever-charmer-ja.wav",
+      "bytes": 194604,
+      "sha256": "026b64e3f43bd688e129e58b4485f73ce28ac65b9f85bb31d3676eb0b079be80"
+    },
+    {
+      "path": "voice-packs/previews/male-cool-youth-en.wav",
+      "bytes": 204844,
+      "sha256": "22a38ed9e161ff7fce8c94f2d3b29e5d749a67fc43785bc7fe578532ab1641ca"
+    },
+    {
+      "path": "voice-packs/previews/male-cool-youth-ja.wav",
+      "bytes": 225324,
+      "sha256": "a0f33de15fadec243094ad725005eb2e523438c989f267111c612106b1b98c4b"
+    },
+    {
+      "path": "voice-packs/previews/male-dark-cold-en.wav",
+      "bytes": 266284,
+      "sha256": "7d50788cccbeb0d0f07cab7394ea6122f2b663105e589e2934d21a1302a1b244"
+    },
+    {
+      "path": "voice-packs/previews/male-dark-cold-ja.wav",
+      "bytes": 320044,
+      "sha256": "5e182503c9ba2520767a89edc8ccb7c9d582220f37deb030b59d44c2235bcf6e"
+    },
+    {
+      "path": "voice-packs/previews/male-elegant-controlled-en.wav",
+      "bytes": 194604,
+      "sha256": "3489dc4411c219b1c0af3b0a197bb4bb5329ec60b5be59bbd6efc38762701b32"
+    },
+    {
+      "path": "voice-packs/previews/male-elegant-controlled-ja.wav",
+      "bytes": 220204,
+      "sha256": "77a00e4ba968a2b72d55e9165336ad61b9716d4235f2a61be69e6d056ddaac63"
+    },
+    {
+      "path": "voice-packs/previews/male-elegant-youthful-en.wav",
+      "bytes": 158764,
+      "sha256": "1de29133a2730a466830302d302f635d310de06c23bfab15dec56f71ff728d97"
+    },
+    {
+      "path": "voice-packs/previews/male-elegant-youthful-ja.wav",
+      "bytes": 248364,
+      "sha256": "7a785ba8d247840df5d59304f1a761efe7c1011d73cdf6fc673a98a3d3236c59"
+    },
+    {
+      "path": "voice-packs/previews/male-gentle-mature-en.wav",
+      "bytes": 245804,
+      "sha256": "a6b8ebff556827924d827662fe9595a0d83473f05dba52e31ef7beb5685cd1c5"
+    },
+    {
+      "path": "voice-packs/previews/male-gentle-mature-ja.wav",
+      "bytes": 240684,
+      "sha256": "d37ddff4a04714b3f7c2532a69e17892a77fef23341065f69e1ff04294c1f212"
+    },
+    {
+      "path": "voice-packs/previews/male-low-calm-en.wav",
+      "bytes": 207404,
+      "sha256": "8ad666fd43ede7cf826c1c99412e5c9c002a4e2dcc526705c0e4887fd2bea5ae"
+    },
+    {
+      "path": "voice-packs/previews/male-low-calm-ja.wav",
+      "bytes": 286764,
+      "sha256": "60c4e923eae48c9a8be3f0baa2d8922d8379d679cd9071b5032dbc9fe5f1c544"
+    },
+    {
+      "path": "voice-packs/previews/male-playful-en.wav",
+      "bytes": 230444,
+      "sha256": "ae152b36d79c2895985a4732c4a24e23f60566daef0e3891a5ab36e6d6ad1c86"
+    },
+    {
+      "path": "voice-packs/previews/male-playful-ja.wav",
+      "bytes": 186924,
+      "sha256": "f7226e54a31b6acdc59df2685213c24427fe20a148c6a0bd15e3063940be1d7a"
+    },
+    {
+      "path": "voice-packs/previews/male-polite-dangerous-en.wav",
+      "bytes": 156204,
+      "sha256": "4d176273956c952c3d97381841be919faad2f995cce28e257f78c30c76cdc309"
+    },
+    {
+      "path": "voice-packs/previews/male-polite-dangerous-ja.wav",
+      "bytes": 225324,
+      "sha256": "72064fdf7a151f56129ff65f0ec759c624efc2f1084ef24e604ecbbb9fbc930a"
+    },
+    {
+      "path": "voice-packs/previews/male-rough-low-en.wav",
+      "bytes": 227884,
+      "sha256": "31e9a08af4662aa7a212c70e6ca89fa4e8b678a9f1df61721451f83da723fc64"
+    },
+    {
+      "path": "voice-packs/previews/male-rough-low-ja.wav",
+      "bytes": 230444,
+      "sha256": "65dd2ac9f70005b5289f32f7aa47908b621feab72a1a06a20010f2d81083464c"
+    },
+    {
+      "path": "voice-packs/previews/male-soft-youth-en.wav",
+      "bytes": 194604,
+      "sha256": "7fcbdda274e990c0c514d8f5dc3db8f6199d68df2d53b8fc836199c33513108c"
+    },
+    {
+      "path": "voice-packs/previews/male-soft-youth-ja.wav",
+      "bytes": 207404,
+      "sha256": "213b5fdc73bdaae7937e7a4ed0b980e83b2aa1baf5ec84ad506a111bd093192f"
+    },
+    {
+      "path": "voice-packs/previews/male-warm-authority-en.wav",
+      "bytes": 217644,
+      "sha256": "2a9139b567df8121ea7d8ca8809e7a6a4bc020865ddccd04d2d21c7391dc7bc2"
+    },
+    {
+      "path": "voice-packs/previews/male-warm-authority-ja.wav",
+      "bytes": 235564,
+      "sha256": "6eb0fe5a7439490bf1ed5136ae6c67e33e693bdb512f540623df961d76b08fda"
+    }
+  ]
+}
