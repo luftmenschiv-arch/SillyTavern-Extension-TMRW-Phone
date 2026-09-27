@@ -1,33 +1,28 @@
 {
   "schema": "tmrw-public-beta-v1",
-  "version": "0.1.0-beta.2",
+  "version": "0.1.0-beta.3",
   "channel": "beta",
   "stable": false,
   "repository": "https://github.com/luftmenschiv-arch/SillyTavern-Extension-TMRW-Phone",
   "components": {
-    "extension": "0.1.0-beta.2",
+    "extension": "0.1.0-beta.3",
     "voiceManager": "1.0.0-alpha.1",
     "presetCatalog": 1,
     "presets": 24,
-    "previews": 48
+    "previews": 48,
+    "voicePack": "1.0.0-beta.1",
+    "termuxInstaller": "1.0.0-beta.1"
   },
   "compatibility": {
     "keyflow": "1.5.1",
-    "focusedTestsPassed": 51,
+    "focusedTestsPassed": 64,
     "liveProviderQualification": false
   },
   "pending": [
-    "fresh-device-termux-installer",
-    "complete-runtime-model-download",
     "automatic-updates",
-    "live-mobile-qualification"
+    "fresh-android-termux-installation-matrix",
+    "live-provider-qualification"
   ],
-  "companion": {
-    "file": "tmrw-voice-companion-0.1.0-beta.2.tar.gz",
-    "bytes": 37432250,
-    "sha256": "0eef83745c55c9216f7f3f07772f958d56f9a07e459612b15ddf7564a17dbb45",
-    "completeRuntime": false
-  },
   "candidateManifestSha256": "c24784ac9da3331f7cd57585efc57cda8835bc5b0319d59cad1cd6b4c61a9138",
   "textNormalization": "LF",
   "files": [
@@ -42,16 +37,6 @@
       "sha256": "f958a3130585e974c996c95f5a2785598464785d1bb76f3e4d1503b2613fce3b"
     },
     {
-      "path": "QUALITY.md",
-      "bytes": 2003,
-      "sha256": "1afebce3fcf959a77d9c20b69760b2076dea84a7cacfad265ce3c61c9488c691"
-    },
-    {
-      "path": "README.md",
-      "bytes": 7972,
-      "sha256": "4040999b0ba0d9fb38a8c53080a215c0a7c1c79f23e0ffcafec97f071a2d2e7a"
-    },
-    {
       "path": "index.js",
       "bytes": 43,
       "sha256": "0e40211bbd27d7aa9d3c7fb592468ba9a2e66858638ee2822958200cc6b822e1"
@@ -59,12 +44,52 @@
     {
       "path": "manifest.json",
       "bytes": 515,
-      "sha256": "16dfb0478376d8bb9b54596902d87c5d2fd00d2061f01fb34bb5c0a93be83b97"
+      "sha256": "3a2605ba7800274127aef98f125e0f0b05739815ec0c94655508444f4f3599d6"
     },
     {
       "path": "package.json",
       "bytes": 200,
-      "sha256": "484002ea2441ba4a22d4b150133bcf93abf6c09be859417605c7b7b1e3cd9d89"
+      "sha256": "56e39679fa846fd700edf353b3139eb20a6b62b8567d4d629d9b277ae938b03e"
+    },
+    {
+      "path": "QUALITY.md",
+      "bytes": 3276,
+      "sha256": "954dc8a4b5454f3c39fd32f70c2c928ab2ef6c06bfe3b114caf28e07d6ea978a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11734,
+      "sha256": "b032b55c22bcfd4a992f0a9eb22c38a916a3ef075788543bd4864666a49ca56b"
+    },
+    {
+      "path": "scripts/termux/download.mjs",
+      "bytes": 11016,
+      "sha256": "8912f7bacd1e212786f11fa494087c6860c946ab69ce2c3684bb01892813b552"
+    },
+    {
+      "path": "scripts/termux/install-runtime.mjs",
+      "bytes": 3351,
+      "sha256": "ec65b9a4345bb1192627fe9b4131f897f72a0bc6d10d96c90d6f657887f39020"
+    },
+    {
+      "path": "scripts/termux/install.sh",
+      "bytes": 2370,
+      "sha256": "c00912c80a50d09aae7fb08cc165136fbf2a6e5d9a32df7a7edea103c2169c66"
+    },
+    {
+      "path": "scripts/termux/README.md",
+      "bytes": 941,
+      "sha256": "bed6af432eaec1c784f3be4d9ce888ce94f87d8754fd7a3ac8d441e33141f60f"
+    },
+    {
+      "path": "scripts/termux/setup.mjs",
+      "bytes": 8154,
+      "sha256": "d71ea340947ae5d445a49666b2a56fca5e8e519e7b7096990356725ebb225f08"
+    },
+    {
+      "path": "scripts/termux/start.mjs",
+      "bytes": 1892,
+      "sha256": "a9f024b864a1ebe9336317c336ef6b8344372c8e44d232db1082e9c9202201cb"
     },
     {
       "path": "scripts/verify-release.mjs",
@@ -1288,8 +1313,8 @@
     },
     {
       "path": "v3/ui/shell.mjs",
-      "bytes": 205238,
-      "sha256": "ec673bc2ecd903e3ce20a9c01e4b7c8c5aeaaf39fa19cc29f35aa9ba9fc88d1a"
+      "bytes": 205218,
+      "sha256": "25b3a4cab11027f7ff6165f68d821ee4e760956ad0688d7a61603be5c1ae0611"
     },
     {
       "path": "v3/ui/shop.mjs",
@@ -1566,5 +1591,20 @@
       "bytes": 235564,
       "sha256": "6eb0fe5a7439490bf1ed5136ae6c67e33e693bdb512f540623df961d76b08fda"
     }
-  ]
+  ],
+  "termux": {
+    "channel": "beta",
+    "platform": "standard-Termux-Android-arm64",
+    "releaseTag": "v0.1.0-beta.3",
+    "runtimePack": "1.0.0-beta.1",
+    "installIndexSchema": "tmrw-termux-install-v1",
+    "tested": "isolated-root-on-Realme-RMX3370-Android-13",
+    "notTested": [
+      "fresh-OS-package-manager-bootstrap",
+      "all-Android-models",
+      "live-provider-503-recovery"
+    ],
+    "dataPreservation": "repeat-install-31-profile-files-history-and-active-pointer-byte-identical",
+    "presetPermission": "owner-confirmed-public-distribution-2026-09-28"
+  }
 }

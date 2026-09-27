@@ -1027,7 +1027,7 @@ export class TmrwPhoneShell {
   }
   async #installLocalVoice() {
     if (!PUBLIC_RUNTIME_PACK_INDEX_URL) {
-      this.#toastMessage('แพ็ก Local Voice สำหรับเครื่องใหม่ยังไม่เปิดดาวน์โหลดใน beta นี้ · ตัวอย่างเสียงฟังได้ทันที ส่วนตัวติดตั้งจะตามมาในอัปเดตถัดไป');
+      this.#toastMessage('ติดตั้ง Local Voice ด้วยคำสั่ง Termux ใน README ของ TMRW Phone · เมื่อติดตั้งแล้ว กดตรวจการเชื่อมต่ออีกครั้ง · ตัวอย่างเสียงฟังได้ทันที');
       return false;
     }
     if (this.#voiceManagerBusy) return false; this.#voiceManagerBusy = true; await this.renderActive();

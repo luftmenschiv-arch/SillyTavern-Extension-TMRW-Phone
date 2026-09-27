@@ -20,3 +20,25 @@ Version: **0.1.0-beta.2**. Scope: curated public distribution, not stable or fre
 - Provider availability: HTTP 503 can still exhaust all configured fallback models. Phone's generation deadline can end a call attempt before recovery succeeds.
 
 KeyFlow is optional. Its public 1.5.1 fixes ST's HTTP 500 wrapper around Google's 503/UNAVAILABLE and stops cancellation-time retries. This release does not bundle a second KeyFlow copy or duplicate its retry owner.
+# Termux installer qualification — beta.3
+
+The focused suite now passes **64/64** checks, including 13 new installer/service
+tests. Android qualification used a separate root on a Realme RMX3370 (Android
+13), not the owner's ST data. Private Python, English/Japanese synthesis,
+transcription, cloning and runtime restart passed. A complete pack was downloaded,
+verified, installed and repeated; 31 profile files plus history/active-pointer
+fixtures remained byte-identical. The generated launcher stopped and restarted
+only the isolated voice services.
+
+The package includes third-party notices and Python-SoXR/libsoxr source. Unused
+readline/gdbm native modules were excluded from the distributed private Python;
+the user's global Python was not changed. Preset public-distribution permission
+was confirmed by the project owner. This is not a formal legal or security audit.
+
+Limits: Android can terminate background processes; reopening with `tmrw-start`
+may be necessary. Only one hardware model was exercised. The test phone already
+had Termux system dependencies. Fresh OS/package-manager installs, all phone
+models, live AI provider availability and automatic updates are not certified.
+The old UI pack-install schema is not used for the new Termux CLI index.
+
+---
