@@ -1,4 +1,26 @@
-# Public beta qualification — 2026-09-27
+# Current: beta.4 auto-update qualification — 2026-09-28
+
+- Focused regression: **78/78 pass**, including 14 updater tests plus previous
+  installer, call, voice and KeyFlow 1.5.1 checks.
+- On the isolated Android installation, updater fast-forwarded beta.3 to the
+  reviewed preparation branch before main promotion, verified the snapshot,
+  installed a versioned launcher engine, and started both actual voice services.
+- Unchanged pack skipped index/model downloads. Existing 27 profile files and
+  history fixture remained unchanged. Active services deferred updates; update
+  opt-out/opt-in worked.
+- A synthetic failing runtime candidate exercised real process startup failure
+  and rollback; a pending transaction exercised interrupted-update recovery.
+  This does not claim a second model version was publicly released or downloaded.
+- Found and fixed a Termux partial-clone issue: sharing the original Git object
+  store left changed blobs absent. Candidate checkout now resolves from the public
+  origin and must be clean before verification; the failed attempt preserved the
+  original extension.
+- Automatic updates are startup-based, not a background Android service. ST's
+  own auto-update schedule/settings also apply. No claim of automatic rollback of
+  every UI/extension regression after activation. Dirty/custom checkouts are not
+  overwritten. Tests do not certify fresh OS installs or all phone models.
+
+## Historical: public beta.2 qualification — 2026-09-27
 
 Version: **0.1.0-beta.2**. Scope: curated public distribution, not stable or fresh-device voice qualification.
 
