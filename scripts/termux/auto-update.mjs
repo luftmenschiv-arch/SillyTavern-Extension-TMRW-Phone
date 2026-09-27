@@ -83,8 +83,12 @@ export async function updateExtension(config, { execute = run, busy = isBusy } =
   if (tree.split('\n').some(line => /^(?:120000|160000) /u.test(line))) throw new Error('unsafe-release-tree');
   const staging = path.join(config.root, 'update-staging', crypto.randomUUID());
   await fs.mkdir(path.dirname(staging), { recursive: true });
-  await execute('git', ['clone', '--no-checkout', '--shared', extension, staging], { timeout: 45000 });
+  // Do not share a partial clone's object store: Termux Git can leave promised
+  // changed blobs absent in that checkout. Resolve blobs from the real origin.
+  await execute('git', ['clone', '--no-checkout', '--filter=blob:none', `${REPOSITORY}.git`, staging], { timeout: 120000, env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } });
+  await execute('git', ['-C', staging, 'fetch', '--no-tags', 'origin', next], { timeout: 45000, env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } });
   await execute('git', ['-C', staging, 'checkout', '--detach', next], { timeout: 45000 });
+  if ((await execute('git', ['-C', staging, 'status', '--porcelain'], { timeout: 15000 })).trim()) throw new Error('incomplete-candidate-checkout');
   await execute(process.execPath, ['scripts/verify-release.mjs'], { cwd: staging, timeout: 120000 });
   // Recheck after network/verification, immediately before the fast-forward.
   if ((await git(['rev-parse', 'HEAD'])).trim() !== before || (await git(['status', '--porcelain'])).trim()) throw new Error('extension-changed-during-update');

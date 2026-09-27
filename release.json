@@ -62,8 +62,8 @@
     },
     {
       "path": "scripts/termux/auto-update.mjs",
-      "bytes": 10915,
-      "sha256": "7d157323d811df41eb4789bb208da05f6a315fbbb8c678132f8814616fcdf57b"
+      "bytes": 11446,
+      "sha256": "613ddd36044b6fffa2ccf9c45c30f235d800c2368c3d7da86be325eff5552e40"
     },
     {
       "path": "scripts/termux/download.mjs",
