@@ -54,7 +54,9 @@ for (const file of release.files) {
 assert.equal(previewCount, 48); assert.equal(previews.size, 48);
 const manifest = JSON.parse(await fs.readFile(path.join(directory, 'manifest.json'), 'utf8'));
 assert.equal(manifest.version, release.version);
-assert.equal(manifest.auto_update, false);
+assert.equal(manifest.auto_update, true);
+const { validateChannel } = await import('./termux/auto-update.mjs');
+validateChannel(JSON.parse(await fs.readFile(path.join(directory, 'scripts/termux/voice-update.json'), 'utf8')));
 const clientModule = await import('../v3/platform/voice/tmrw-voice-manager-client.mjs');
 const client = new clientModule.TMRWVoiceManagerClient({ fetchImpl: async url => {
   const bytes = await fs.readFile(new URL(url));

@@ -1,25 +1,24 @@
 {
   "schema": "tmrw-public-beta-v1",
-  "version": "0.1.0-beta.3",
+  "version": "0.1.0-beta.4",
   "channel": "beta",
   "stable": false,
   "repository": "https://github.com/luftmenschiv-arch/SillyTavern-Extension-TMRW-Phone",
   "components": {
-    "extension": "0.1.0-beta.3",
+    "extension": "0.1.0-beta.4",
     "voiceManager": "1.0.0-alpha.1",
     "presetCatalog": 1,
     "presets": 24,
     "previews": 48,
     "voicePack": "1.0.0-beta.1",
-    "termuxInstaller": "1.0.0-beta.1"
+    "termuxInstaller": "1.0.0-beta.2"
   },
   "compatibility": {
     "keyflow": "1.5.1",
-    "focusedTestsPassed": 64,
+    "focusedTestsPassed": 78,
     "liveProviderQualification": false
   },
   "pending": [
-    "automatic-updates",
     "fresh-android-termux-installation-matrix",
     "live-provider-qualification"
   ],
@@ -43,13 +42,13 @@
     },
     {
       "path": "manifest.json",
-      "bytes": 515,
-      "sha256": "3a2605ba7800274127aef98f125e0f0b05739815ec0c94655508444f4f3599d6"
+      "bytes": 514,
+      "sha256": "b32e66faf22c813f209dea83d354e27a874989932fe69eeb5742fe5d2796f7e6"
     },
     {
       "path": "package.json",
-      "bytes": 200,
-      "sha256": "56e39679fa846fd700edf353b3139eb20a6b62b8567d4d629d9b277ae938b03e"
+      "bytes": 212,
+      "sha256": "ee9df0fdd53e54c0d4f198c332c1ba77b4a67054515061e6109f206973260d6b"
     },
     {
       "path": "QUALITY.md",
@@ -58,8 +57,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 12311,
-      "sha256": "98e1e675f2ed809c5089d00610f22ee4765f061ef2e4b2b3e9a41c3cbaf102d0"
+      "bytes": 16532,
+      "sha256": "6efeb500d652fae7dd7596c9e12982af3554d50fd74ee12bf00129a64ece791f"
+    },
+    {
+      "path": "scripts/termux/auto-update.mjs",
+      "bytes": 10915,
+      "sha256": "7d157323d811df41eb4789bb208da05f6a315fbbb8c678132f8814616fcdf57b"
     },
     {
       "path": "scripts/termux/download.mjs",
@@ -68,13 +72,23 @@
     },
     {
       "path": "scripts/termux/install-runtime.mjs",
-      "bytes": 3351,
-      "sha256": "ec65b9a4345bb1192627fe9b4131f897f72a0bc6d10d96c90d6f657887f39020"
+      "bytes": 3748,
+      "sha256": "582f2bb6ac1b0911e9afcc9085a370d583af9c3f0c36675f309aa2765cc2b895"
     },
     {
       "path": "scripts/termux/install.sh",
       "bytes": 2772,
       "sha256": "eb145da74adbae0d9594acc994753a0d6af9ccea559229c569fbc0248dbcc892"
+    },
+    {
+      "path": "scripts/termux/launch.mjs",
+      "bytes": 855,
+      "sha256": "7c595bc78ab1e6c23de2b289a62a35ad8f2c4c000603d28b7bc39c456043367b"
+    },
+    {
+      "path": "scripts/termux/launcher-tools.mjs",
+      "bytes": 1775,
+      "sha256": "d23374d704ce3dd391618ce36912ac422905b130dcb3a339330ae31d2c386f01"
     },
     {
       "path": "scripts/termux/README.md",
@@ -83,18 +97,23 @@
     },
     {
       "path": "scripts/termux/setup.mjs",
-      "bytes": 8244,
-      "sha256": "b07e9be6b1bab320d06c41f0763ed56e66e2ab5e4393fd4069b10858dbe0b12d"
+      "bytes": 8982,
+      "sha256": "764c5c3eb7e651a305871bf1ef9a31bfeb649103307af56e63a0810e7bd1c96e"
     },
     {
       "path": "scripts/termux/start.mjs",
-      "bytes": 1892,
-      "sha256": "a9f024b864a1ebe9336317c336ef6b8344372c8e44d232db1082e9c9202201cb"
+      "bytes": 3171,
+      "sha256": "47fd2dd5441d6068cc0b6aa9c6fe07d6db5640a015af6938177d18778a86da81"
+    },
+    {
+      "path": "scripts/termux/voice-update.json",
+      "bytes": 430,
+      "sha256": "5a0d134eda3c500b97fcf7583cc13cd4e93262f68b30219d11e2f18c4767c5bf"
     },
     {
       "path": "scripts/verify-release.mjs",
-      "bytes": 4836,
-      "sha256": "74d41ed15de73df4b2e9bc19d9dc75c61442e2eb908a3cbd8d13837299d29dff"
+      "bytes": 5019,
+      "sha256": "ea939c87cdec5efbd86f587fc3c7b91f2900d9bf9d957231d2c24f13100f6d9b"
     },
     {
       "path": "style.css",
@@ -1595,9 +1614,10 @@
   "termux": {
     "channel": "beta",
     "platform": "standard-Termux-Android-arm64",
-    "releaseTag": "v0.1.0-beta.3",
+    "releaseTag": "v0.1.0-beta.4",
     "runtimePack": "1.0.0-beta.1",
     "installIndexSchema": "tmrw-termux-install-v1",
+    "updateProtocol": 1,
     "tested": "isolated-root-on-Realme-RMX3370-Android-13",
     "notTested": [
       "fresh-OS-package-manager-bootstrap",
