@@ -73,8 +73,8 @@
     },
     {
       "path": "scripts/termux/install.sh",
-      "bytes": 2370,
-      "sha256": "c00912c80a50d09aae7fb08cc165136fbf2a6e5d9a32df7a7edea103c2169c66"
+      "bytes": 2772,
+      "sha256": "eb145da74adbae0d9594acc994753a0d6af9ccea559229c569fbc0248dbcc892"
     },
     {
       "path": "scripts/termux/README.md",

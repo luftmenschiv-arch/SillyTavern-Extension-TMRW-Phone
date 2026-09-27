@@ -10,10 +10,19 @@ if [[ "$RELEASE_BASE" == @* || "$INSTALLER_SHA256" == @* || "$INDEX_SHA256" == @
 fi
 [[ "${PREFIX:-}" == /data/data/com.termux/files/usr && "$(uname -m)" == aarch64 ]] || { echo 'ต้องใช้ Termux มาตรฐานบน Android 64-bit (arm64)' >&2; exit 1; }
 echo 'TMRW Phone + Local Voice (beta) — ไม่ลบแชท ไม่แทนที่ ST และไม่ลง Python ทับของเดิม'
-pkg update -y
-pkg install -y git curl tar ffmpeg libsndfile
+packages=()
+for program in git curl tar ffmpeg; do
+  command -v "$program" >/dev/null || packages+=("$program")
+done
+[[ -f "$PREFIX/lib/libsndfile.so" ]] || packages+=(libsndfile)
 if ! command -v node >/dev/null || ! node -e 'process.exit(Number(process.versions.node.split(".")[0]) >= 22 ? 0 : 1)'; then
-  pkg install -y nodejs-lts
+  packages+=(nodejs-lts)
+fi
+if (( ${#packages[@]} )); then
+  pkg update -y
+  pkg install -y "${packages[@]}"
+else
+  echo 'ใช้เครื่องมือ Termux ที่มีอยู่แล้ว ไม่อัปเกรดแพ็กเกจระบบที่ไม่จำเป็น'
 fi
 readonly WORK_DIR="$(mktemp -d "${TMPDIR:-$PREFIX/tmp}/tmrw-installer.XXXXXXXX")"
 # Keep this small diagnostic directory on error; model parts use persistent cache.
