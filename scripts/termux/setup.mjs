@@ -41,7 +41,8 @@ export async function installExtension(plan) {
   // ST must never discover a partially downloaded extension.
   const staging = path.join(plan.st, `.tmrw-install-${crypto.randomUUID()}`);
   await run('git', ['clone', '--no-checkout', '--filter=blob:none', plan.repository, staging]);
-  await run('git', ['-C', staging, 'checkout', '--detach', plan.commit]);
+  await run('git', ['-C', staging, 'checkout', '-B', 'main', plan.commit]);
+  await run('git', ['-C', staging, 'branch', '--set-upstream-to=origin/main', 'main']);
   await run(process.execPath, ['scripts/verify-release.mjs'], { cwd: staging });
   // Never merge, reset, remove or overwrite a pre-existing extension.
   if (await fs.lstat(plan.target).catch(() => null)) throw new Error('extension-target-created-during-install');

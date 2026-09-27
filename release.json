@@ -58,8 +58,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11734,
-      "sha256": "b032b55c22bcfd4a992f0a9eb22c38a916a3ef075788543bd4864666a49ca56b"
+      "bytes": 12311,
+      "sha256": "98e1e675f2ed809c5089d00610f22ee4765f061ef2e4b2b3e9a41c3cbaf102d0"
     },
     {
       "path": "scripts/termux/download.mjs",
@@ -83,8 +83,8 @@
     },
     {
       "path": "scripts/termux/setup.mjs",
-      "bytes": 8154,
-      "sha256": "d71ea340947ae5d445a49666b2a56fca5e8e519e7b7096990356725ebb225f08"
+      "bytes": 8244,
+      "sha256": "b07e9be6b1bab320d06c41f0763ed56e66e2ab5e4393fd4069b10858dbe0b12d"
     },
     {
       "path": "scripts/termux/start.mjs",
